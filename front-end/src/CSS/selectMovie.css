@@ -1,0 +1,15 @@
+.SM_heading{
+width:100%;
+font-size:23px;
+color:rgb(8, 91, 81);
+margin-left: 20px;
+}
+ .SM_maincontainer{
+     width:100%;
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+     margin-bottom: 20px;
+     color: black;
+
+} 
