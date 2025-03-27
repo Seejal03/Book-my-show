@@ -1,3 +1,40 @@
 .select_movie_component{
     flex-grow:1;
 }
+.submit {
+    padding: 10px 20px;
+    margin:20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1daaba;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position:relative;
+  }
+  
+  .submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .submit:active {
+    transform: scale(0.95);
+  }
+  .container{
+    width:60%;
+    margin: 2px 2px 2px 2px;
+    padding:30px 30px 0px 30px;
+    background-color:azure;
+    border:1px solid teal;
+    color: azure;
+
+
+  }
+  .wrap{
+    display: flex;
+    flex-grow: 0;
+    overflow: visible;
+  }
+  
