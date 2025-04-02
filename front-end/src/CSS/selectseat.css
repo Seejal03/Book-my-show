@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: teal;
+}
+.seats-heading{
+    width:100%;
+    font-size:23px;
+    color:rgb(8, 91, 81);
+    margin-left: 20px;
+}
