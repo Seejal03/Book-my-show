@@ -1,5 +1,6 @@
 .select_movie_component{
     flex-grow:1;
+    
 }
 .submit {
     padding: 10px 20px;
@@ -23,8 +24,8 @@
     transform: scale(0.95);
   }
   .container{
-    width:60%;
-    margin: 2px 2px 2px 2px;
+    width:90%;
+    margin: 1px 1px 1px 1px;
     padding:30px 30px 0px 30px;
     background-color:azure;
     border:1px solid teal;
@@ -32,9 +33,18 @@
 
 
   }
-  .wrap{
+  .wrap {
     display: flex;
     flex-grow: 0;
     overflow: visible;
-  }
+}
+
+.wrap > div:first-child {
+  flex-basis: 60%; /* 3 out of 5 parts */
+}
+
+.wrap > div:last-child {
+  flex-basis: 40%; /* 2 out of 5 parts */
+}
+
   

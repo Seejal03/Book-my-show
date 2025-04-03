@@ -13,13 +13,26 @@
     animation: fadeInUp 0.5s ease-in-out forwards;
   }
   
-  /* Hover effect */
-  .form-check-label:hover {
+  
+  .form-check-label.active{
+    background-color: rgb(243, 34, 163);
+    font-weight: 600;
+    user-select: none;
+    letter-spacing: 0.5px;
+    cursor:pointer;
+
+  }
+  .form-check-label:inactive{
+    user-select:none;
+    cursor:pointer;
+    letter-spacing:0.5px;
+  }
+  .inactive:hover{
     background-color: rgb(9, 127, 156);
     color: white;
     transform: scale(1.05);
+    opacity:95%;
   }
-  
   /* Checked state */
   input[type="radio"]:checked + .form-check-label {
     background-color: rgb(8, 91, 81);
