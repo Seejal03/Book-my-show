@@ -7,7 +7,7 @@ const app=express()
 router.use(express.json());
 router.use(cors())
 
-router.post("booking",async(req, res)=>{
+router.post("/booking",async(req, res)=>{
     const {movie,slot,seats}=req.body
     try {
         const mydata=new Ticket ({movie,slot,seats})
@@ -28,11 +28,11 @@ router.get("/booking",async(req,res)=>{
         if(mydata.length==0){
             res.status(200).json({data:null, message:"no previous booking"})
         }else{
-            res.status.json({data:mydata[0]})
+            res.status(200).json({data:mydata[0]})
         }
     }catch(err){
          res.status(500).json({data:null, message:"something went wrong!!"
          })
     }
 })
-module.export=router
+module.exports=router
